@@ -9,8 +9,8 @@ let stoppped = false;
 
 function preload(){
   for (let i = 0; i < SB_pics.length; i ++) SB_pics[i] = loadImage('images/s'+(i+1)+'.png');
-  for (let i = 0; i < BACK_pics.length; i ++) BACK_pics[i] = loadImage('/images/back'+(i+1)+'.png');
-  HAND_pic = loadImage('./images/hand.png');
+  for (let i = 0; i < BACK_pics.length; i ++) BACK_pics[i] = loadImage('images/back'+(i+1)+'.png');
+  HAND_pic = loadImage('images/hand.png');
 }
 
 function setup() {
