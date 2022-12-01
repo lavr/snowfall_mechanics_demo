@@ -42,16 +42,16 @@ function setup() {
 }
 
 function draw() {
-  let lerpVal = 0.05;
-  let trXdesired = map(mouseX,0,width, -backTranslateRange,backTranslateRange) * 0.3;
-  let trX = lerp(trXprev,trXdesired,lerpVal);
+//   let lerpVal = 0.05;
+//   let trXdesired = map(mouseX,0,width, -backTranslateRange,backTranslateRange) * 0.3;
+//   let trX = lerp(trXprev,trXdesired,lerpVal);
 
-  let trYdesired = map(mouseY,0,width, -backTranslateRange,backTranslateRange) * 0.2;
-  let trY = lerp(trYprev,trYdesired,lerpVal);
+//   let trYdesired = map(mouseY,0,width, -backTranslateRange,backTranslateRange) * 0.2;
+//   let trY = lerp(trYprev,trYdesired,lerpVal);
 
   for(let s = 0; s < SNOWBALLS.length; s++){
     push();
-    translate(trX * (s+0.5), trY * (s+0.3));
+//     translate(trX * (s+0.5), trY * (s+0.3));
     image(BACK_pics[s],width/2,height/2,BACK_w,BACK_h);
     pop();
     for(let i = 0; i < SNOWBALLS[s].length; i++){
@@ -60,8 +60,8 @@ function draw() {
     }
   }
 
-  trXprev = trX;
-  trYprev = trY;
+//   trXprev = trX;
+//   trYprev = trY;
 
   for(let s = 0; s < SNOWBALLS.length; s++){
     for(let i = 0; i < SNOWBALLS[s].length; i++){
