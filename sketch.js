@@ -55,8 +55,8 @@ function draw() {
     image(BACK_pics[s],width/2,height/2,BACK_w,BACK_h);
     pop();
     for(let i = 0; i < SNOWBALLS[s].length; i++){
-//       SNOWBALLS[s][i].update();
-//       SNOWBALLS[s][i].display();
+      SNOWBALLS[s][i].update();
+      SNOWBALLS[s][i].display();
     }
   }
 
